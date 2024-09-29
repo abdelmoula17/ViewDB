@@ -93,6 +93,7 @@ export const EditorPage: React.FC = () => {
     ]);
 
     useEffect(() => {
+<<<<<<< HEAD
         loadFromApi()
             .then((res) => {
                 console.log('response', res);
@@ -110,6 +111,29 @@ export const EditorPage: React.FC = () => {
             })
             .catch((err) => err);
     }, [addDiagram, updateConfig]);
+=======
+        if (initialDiagram) {
+            return;
+        }
+        const loadDiagram = async () => {
+            loadFromApi()
+                .then((res) => {
+                    const databaseMetadata: DatabaseMetadata =
+                        loadDatabaseMetadata(JSON.stringify(res.meta_data));
+                    const diagram = loadFromDatabaseMetadata({
+                        databaseType: res.db_type ?? DatabaseType.GENERIC,
+                        databaseMetadata,
+                        diagramNumber: 2,
+                    });
+                    addDiagram({ diagram });
+                    updateConfig({ defaultDiagramId: diagram.id });
+                    setInitialDiagram(diagram);
+                })
+                .catch((err) => err);
+        };
+        loadDiagram();
+    }, []);
+>>>>>>> Initial commit: added Laravel package for web-based database diagramming editor
 
     return (
         <>
