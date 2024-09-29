@@ -16,13 +16,8 @@ class QueryLoaderTest extends TestCase
 
   public function testSqlserver()
   {
-<<<<<<< HEAD
-    $expectedQuery = $this->queryLoader->load_file(__DIR__ . '/../../queries/sqlserver/query.sql');
-    $result = $this->queryLoader->sqlserver();
-=======
     $expectedQuery = $this->queryLoader->load_file(__DIR__ . '/../../queries/sqlsrv/query.sql');
     $result = $this->queryLoader->sqlsrv();
->>>>>>> Initial commit: added Laravel package for web-based database diagramming editor
     $this->assertEquals($expectedQuery, $result);
   }
 

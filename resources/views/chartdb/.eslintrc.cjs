@@ -20,6 +20,7 @@ module.exports = {
         ],
         'react/no-unescaped-entities': 'off',
         'react/prop-types': 'off',
+        'react-hooks/exhaustive-deps': 'off',
     },
     settings: {
         react: { version: 'detect' },

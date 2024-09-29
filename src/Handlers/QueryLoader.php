@@ -4,41 +4,22 @@ namespace Khufu\Viewdb\Handlers;
 
 class QueryLoader
 {
-<<<<<<< HEAD
-  private string $sqlserver;
-=======
   private string $sqlsrv;
->>>>>>> Initial commit: added Laravel package for web-based database diagramming editor
   private string $sqlite;
   private string $mariadb;
   private string $mysql;
   private string $pgsql;
 
-<<<<<<< HEAD
-  public function __construct()
-  {
-    $this->sqlserver();
-=======
 
   public function __construct()
   {
     $this->sqlsrv();
->>>>>>> Initial commit: added Laravel package for web-based database diagramming editor
     $this->sqlite();
     $this->mariadb();
     $this->mysql();
     $this->pgsql();
   }
 
-<<<<<<< HEAD
-  /**
-   * Get the sqlserver query
-   */
-  public function sqlserver()
-  {
-    $this->sqlserver = $this->load_sqlserver_query();
-    return $this->sqlserver;
-=======
   public static function load($driver_name)
   {
     try {
@@ -56,7 +37,6 @@ class QueryLoader
   {
     $this->sqlsrv = $this->load_sqlserver_query();
     return $this->sqlsrv;
->>>>>>> Initial commit: added Laravel package for web-based database diagramming editor
   }
 
   /**
@@ -96,20 +76,12 @@ class QueryLoader
   }
 
   /**
-<<<<<<< HEAD
-   * Load the query for the sqlserver database
-=======
    * Load the query for the sqlsrv database
->>>>>>> Initial commit: added Laravel package for web-based database diagramming editor
    * @return string
    */
   public function load_sqlserver_query()
   {
-<<<<<<< HEAD
-    $query = $this->load_file(__DIR__ . "/../../queries/sqlserver/query.sql");
-=======
     $query = $this->load_file(__DIR__ . "/../../queries/sqlsrv/query.sql");
->>>>>>> Initial commit: added Laravel package for web-based database diagramming editor
     return $query;
   }
 
