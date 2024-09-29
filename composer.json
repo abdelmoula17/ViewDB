@@ -1,0 +1,28 @@
+{
+  "name": "khufu/viewdb",
+  "description": "web-based database diagramming editor",
+  "type": "library",
+  "version": "1.0.0",
+  "autoload": {
+    "psr-4": {
+      "Khufu\\Viewdb\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Khufu\\Viewdb\\ViewDbServiceProvider"
+      ]
+    }
+  },
+  "authors": [
+    {
+      "name": "abdelmoula17",
+      "email": "abdelmoulabouchareb12@gmail.com"
+    }
+  ],
+  "require-dev": {
+    "orchestra/testbench": "^8.26",
+    "phpunit/phpunit": "^10.5"
+  }
+}
