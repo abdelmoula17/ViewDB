@@ -1,10 +1,6 @@
 {
   "name": "khufu/viewdb",
-<<<<<<< HEAD
-  "description": "web-based database diagramming editor",
-=======
   "description": "This Laravel package integrates a powerful web-based database diagramming tool into your Laravel application, based on ChartDB. With an intuitive interface.",
->>>>>>> Initial commit: added Laravel package for web-based database diagramming editor
   "type": "library",
   "version": "1.0.0",
   "autoload": {
