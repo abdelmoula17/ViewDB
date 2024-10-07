@@ -2,7 +2,7 @@
   "name": "khufu/viewdb",
   "description": "This Laravel package integrates a powerful web-based database diagramming tool into your Laravel application, based on ChartDB. With an intuitive interface.",
   "type": "library",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "autoload": {
     "psr-4": {
       "Khufu\\Viewdb\\": "src/"
